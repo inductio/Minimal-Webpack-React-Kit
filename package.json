@@ -19,8 +19,9 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "start": "webpack serve --config ./webpack.config.js --mode development",
-    "build": "webpack",
+    "start": "webpack serve --node-env development",
+    "build:dev": "webpack --node-env development",
+    "build:prod": "webpack --node-env production",
     "test": "jest"
   }
 }
